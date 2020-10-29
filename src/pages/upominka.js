@@ -6,7 +6,11 @@ import Layout from "../components/Layout";
 
 const Upominka = ({ data }) => {
 	return (
-		<Layout data={data}>
+		<Layout
+			data={data}
+			metaTitle="Best in covid"
+			metaDescripton="Upomínka na současnou situaci."
+		>
 			<div className="container">
 				<div className="row">
 					<h2>Upomínka</h2>

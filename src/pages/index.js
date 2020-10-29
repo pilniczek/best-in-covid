@@ -7,7 +7,11 @@ import Iframe from "../components/Iframe";
 
 const Index = ({ data }) => {
 	return (
-		<Layout data={data}>
+		<Layout
+			data={data}
+			metaTitle="Best in covid"
+			metaDescription="Češi musí být vždy ve všem nejlepší! A patřičně se pochlubit"
+		>
 			<div className="container">
 				<Iframe
 					title="Best in Covid - Andrej Babiš"

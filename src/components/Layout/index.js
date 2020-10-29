@@ -31,6 +31,34 @@ const Layout = ({ children, data, metaTitle, metaDescription }) => {
 					</div>
 				</div>
 				{children}
+				<footer className="container--wrapper footer">
+					<div className="container">
+						<div className="flex-line">
+							<p>
+								{"© "}
+								<a
+									href="https://tomas-pilnaj.cz/"
+									target="blank"
+									rel="noopener noreferrer"
+								>
+									Tomáš Pilnaj
+								</a>
+								, 28. 10. 2020
+							</p>
+							<p>
+								{"Zdroje a hosting: "}
+								<a
+									href="https://github.com/pilniczek/best-in-covid"
+									target="blank"
+									rel="noopener noreferrer"
+								>
+									GitHub
+								</a>
+								.
+							</p>
+						</div>
+					</div>
+				</footer>
 			</div>
 		</>
 	);

@@ -11,7 +11,12 @@ const styledLayout = css`
 	}
 	.container--wrapper {
 		background-color: #24292e;
+		color: #f8f9fa;
 		margin-bottom: 2rem;
+		&.footer {
+			padding-top: 2rem;
+			margin-bottom: 0;
+		}
 	}
 	.flex-line {
 		display: flex;
@@ -22,8 +27,8 @@ const styledLayout = css`
 		margin: 0;
 	}
 	.headline__link {
-		color: #f8f9fa;
 		text-decoration: none;
+		color: #f8f9fa;
 	}
 `;
 

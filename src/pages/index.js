@@ -13,12 +13,14 @@ const Index = ({ data }) => {
 			metaDescription="Češi musí být vždy ve všem nejlepší! A patřičně se pochlubit"
 		>
 			<div className="container">
+				<h2>Hvězdný výrok, který zraje</h2>
 				<Iframe
 					title="Best in Covid - Andrej Babiš"
 					src="https://www.youtube.com/embed/HSH2dGRc_LE"
 				/>
 			</div>
 			<div className="container">
+				<h2>Jak šel čas</h2>
 				<Iframe
 					title="Koronavirová horská dráha Andreje Babiše! Změnu názorů premiéra shrnuje Veselovský"
 					src="https://video.aktualne.cz/embed_iframe/dvtv/best-in-covid-nebo-taky-ne-nazorovou-houpacku-premiera-babis/r~30f6c2ac0dab11ebaabd0cc47ab5f122/?media_external=1"
@@ -31,6 +33,10 @@ const Index = ({ data }) => {
 				/>
 			</div>
 			<div className="container">
+				<h2>
+					Že si za současný stav mohou lidé sami? Možná na tom kapka pravdy
+					bude.
+				</h2>
 				<p>
 					{"Následující post od "}
 					<a

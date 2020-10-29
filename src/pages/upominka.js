@@ -17,7 +17,7 @@ const Upominka = ({ data }) => {
 					<p>Premierův populární citát do každé kapsy!</p>
 					<p>
 						Obdarujte své klíče přívěskem. Dejte jim najevo, že i když je po
-						dobu lockdownu prakticky nepoužívátě, tak na ně myslíte. A těšíte
+						dobu lockdownu prakticky nepoužíváte, tak na ně myslíte. A těšíte
 						se, až je zase budete potřebovat několikrát denně.
 					</p>
 				</div>

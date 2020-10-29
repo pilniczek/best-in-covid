@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "name": "best-in-covid",
+  "description": null,
+  "icons": {
+    "60": "/icons-341f9915dca03a7dcb8b681a9a18c269/firefox_app_60x60.png",
+    "128": "/icons-341f9915dca03a7dcb8b681a9a18c269/firefox_app_128x128.png",
+    "512": "/icons-341f9915dca03a7dcb8b681a9a18c269/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": null,
+    "url": null
+  }
+}

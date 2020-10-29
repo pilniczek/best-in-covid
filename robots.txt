@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: http://pilniczek.github.io/best-in-covidsitemap.xml
+Host: pilniczek.github.io

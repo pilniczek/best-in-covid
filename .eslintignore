@@ -1,6 +1,0 @@
-node_modules
-public
-.cache
-package.json
-package-lock.json
-.linaria-cache

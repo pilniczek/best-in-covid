@@ -9,12 +9,13 @@ const Upominka = ({ data }) => {
 		<Layout
 			data={data}
 			metaTitle="Best in covid"
-			metaDescripton="Upomínka na současnou situaci."
+			metaDescription="Upomínka na současnou situaci."
+			metaImage={data.meta_image.childImageSharp.fixed.src}
 		>
 			<div className="container">
 				<div className="row">
 					<h2>Upomínka</h2>
-					<p>Premierův populární citát do každé kapsy!</p>
+					<p>Premiérův populární citát do každé kapsy!</p>
 					<p>
 						Obdarujte své klíče přívěskem. Dejte jim najevo, že i když je po
 						dobu lockdownu prakticky nepoužíváte, tak na ně myslíte. A těšíte
@@ -85,6 +86,13 @@ export const query = graphql`
 		favicon: file(relativePath: { eq: "favicon.png" }) {
 			childImageSharp {
 				fixed(width: 100) {
+					...GatsbyImageSharpFixed_withWebp_noBase64
+				}
+			}
+		}
+		meta_image: file(relativePath: { eq: "best-in-covid-white.png" }) {
+			childImageSharp {
+				fixed(width: 200) {
 					...GatsbyImageSharpFixed_withWebp_noBase64
 				}
 			}

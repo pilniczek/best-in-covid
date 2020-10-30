@@ -8,10 +8,15 @@ import styledLayout from "./style";
 import Nav from "../Nav";
 import Seo from "../SEO";
 
-const Layout = ({ children, data, metaTitle, metaDescription }) => {
+const Layout = ({ children, data, metaTitle, metaDescription, metaImage }) => {
 	return (
 		<>
-			<Seo metaTitle={metaTitle} metaDescription={metaDescription} lang="cs" />
+			<Seo
+				metaTitle={metaTitle}
+				metaDescription={metaDescription}
+				metaImage={metaImage}
+				lang="cs"
+			/>
 			<div className={styledLayout}>
 				<div className="container--wrapper">
 					<div className="container">
@@ -69,6 +74,7 @@ Layout.propTypes = {
 	data: object.isRequired, // eslint-disable-line
 	metaTitle: string.isRequired,
 	metaDescription: string.isRequired,
+	metaImage: string.isRequired,
 };
 
 export default Layout;

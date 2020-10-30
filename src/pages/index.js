@@ -10,7 +10,8 @@ const Index = ({ data }) => {
 		<Layout
 			data={data}
 			metaTitle="Best in covid"
-			metaDescription="Češi musí být vždy ve všem nejlepší! A patřičně se pochlubit"
+			metaDescription="Češi musí být vždy ve všem nejlepší! A patřičně se pochlubit."
+			metaImage={data.meta_image.childImageSharp.fixed.src}
 		>
 			<div className="container">
 				<h2>Hvězdný výrok, který zraje</h2>
@@ -106,6 +107,13 @@ export const query = graphql`
 		favicon: file(relativePath: { eq: "favicon.png" }) {
 			childImageSharp {
 				fixed(width: 100) {
+					...GatsbyImageSharpFixed_withWebp_noBase64
+				}
+			}
+		}
+		meta_image: file(relativePath: { eq: "favicon.png" }) {
+			childImageSharp {
+				fixed(width: 200) {
 					...GatsbyImageSharpFixed_withWebp_noBase64
 				}
 			}

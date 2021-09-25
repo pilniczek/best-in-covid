@@ -22,6 +22,10 @@ const styledLayout = css`
 	.headline__link {
 		text-decoration: none;
 		color: #f8f9fa;
+		display: flex;
+		align-items: center;
+		padding: 0 20px;
+		margin: 0 -20px;
 	}
 	.header {
 		padding-bottom: 2rem;

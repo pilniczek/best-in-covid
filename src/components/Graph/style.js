@@ -6,6 +6,8 @@ const styledGraph = css`
 	.g-col-wrap {
 		padding-top: 3rem;
 		padding-bottom: 6rem;
+		max-width: 800px;
+		margin: auto;
 	}
 
 	.g-col-wrap .g-col .g-box.gb-h04 {
@@ -18,7 +20,7 @@ const styledGraph = css`
 		position: relative;
 	}
 	.g-col-wrap .g-col:not(:last-child) {
-		margin-right: 1.4rem;
+		margin-right: 5%;
 	}
 	.g-col-wrap .g-col .death-count {
 		color: #0e0e1c;
@@ -53,13 +55,15 @@ const styledGraph = css`
 	}
 	.cross {
 		position: absolute;
-		width: 0.7rem;
+		width: 18%;
+		min-width: 12px;
 		bottom: 1.3rem;
 		left: 50%;
 		transform: translateX(-50%);
 	}
 	.cross.big {
-		width: 1.1rem;
+		width: 25%;
+		min-width: 15px;
 		top: 1.5rem;
 		bottom: auto;
 		left: 50%;
@@ -88,15 +92,12 @@ const styledGraph = css`
 	.gb-h08 {
 		height: 10.7rem;
 	}
+	.g-col-wrap .g-col .g-box.gb-h04 {
+		height: 12rem;
+	}
 	@media (min-width: 1260px) {
 		.graph-headline {
 			font-size: 2.4rem;
-		}
-		.g-col-wrap .g-col {
-			width: 6.6rem;
-		}
-		.g-col-wrap .g-col:not(:last-child) {
-			margin-right: 4rem;
 		}
 		.country,
 		.death-count {
@@ -126,23 +127,19 @@ const styledGraph = css`
 		.g-col-wrap .g-col .g-box.gb-h04 {
 			height: 31rem;
 		}
+		.g-col-wrap .g-col .g-box.gb-h04 {
+			height: 23.5rem;
+		}
 	}
 	@media screen and (max-width: 405px) {
-		.g-col-wrap .g-col {
-			width: 2.4rem;
-		}
 		.g-col-wrap .g-col .country {
 			font-size: 0.8rem;
 		}
-	}
-
-	/*! CSS Used from: Embedded */
-	.g-col-wrap .g-col .g-box.gb-h04 {
-		height: 12rem;
-	}
-	@media only screen and (min-width: 1260px) {
-		.g-col-wrap .g-col .g-box.gb-h04 {
-			height: 23.5rem;
+		.g-col-wrap .g-col {
+			width: 12.55%;
+		}
+		.g-col-wrap .g-col:not(:last-child) {
+			margin-right: 2%;
 		}
 	}
 `;

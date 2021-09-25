@@ -17,23 +17,19 @@ const Layout = ({ children, data, metaTitle, metaDescription, metaImage }) => {
 				lang="cs"
 			/>
 			<div className={styledLayout}>
-				<div className="header bg-dark">
+				<div className="header bg-black">
 					<div className="container p0">
 						<div className="flex-line">
-							<h1 className="m0">
-								<Link className="headline__link" to="/">
-									Best in covid
-								</Link>
-							</h1>
-							<Link to="/">
+							<Link className="headline__link" to="/">
 								<GatsbyImg fixed={data.favicon.childImageSharp.fixed} />
+								<h1 className="m0">Best in covid</h1>
 							</Link>
+							<Nav />
 						</div>
-						<Nav />
 					</div>
 				</div>
 				{children}
-				<footer className="bg-dark footer">
+				<footer className="bg-black footer">
 					<div className="container p0">
 						<div className="flex-line">
 							<p>

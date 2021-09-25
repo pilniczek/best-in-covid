@@ -38,8 +38,15 @@ const Index = ({ data }) => {
 					</p>
 				</TextBox>
 			</div>
+			<div className="bg-black u-full-width">
+				<div className="container">
+					<Iframe
+						title="Koronavirová horská dráha Andreje Babiše! Změnu názorů premiéra shrnuje Veselovský"
+						src="https://video.aktualne.cz/embed_iframe/dvtv/best-in-covid-nebo-taky-ne-nazorovou-houpacku-premiera-babis/r~30f6c2ac0dab11ebaabd0cc47ab5f122/?media_external=1"
+					/>
+				</div>
+			</div>
 			<div className="container">
-				<h2>Jak šel čas</h2>
 				<TextBox title="28.1.2020 - Otázky bez odpovědí" icon="!">
 					<p>
 						<a
@@ -49,7 +56,7 @@ const Index = ({ data }) => {
 						>
 							Bohuslav Svoboda
 						</a>
-						{" chce zařadit na pořad jednání PSP "}
+						{" chtěl zařadit na pořad jednání PSP "}
 						<a
 							href="https://www.psp.cz/eknih/2017ps/stenprot/040schuz/s040160.htm#r10"
 							target="_blank"
@@ -57,10 +64,7 @@ const Index = ({ data }) => {
 						>
 							informace vlády ČR k opatřením souvisejícím se šířením koronaviru
 						</a>
-						.
-					</p>
-					<p>
-						{"Bohužel "}
+						{". Bohužel "}
 						<a
 							href="https://www.psp.cz/sqw/hlasy.sqw?G=72072"
 							target="_blank"
@@ -75,14 +79,6 @@ const Index = ({ data }) => {
 			<div className="bg-black u-full-width">
 				<div className="container">
 					<Iframe
-						title="Koronavirová horská dráha Andreje Babiše! Změnu názorů premiéra shrnuje Veselovský"
-						src="https://video.aktualne.cz/embed_iframe/dvtv/best-in-covid-nebo-taky-ne-nazorovou-houpacku-premiera-babis/r~30f6c2ac0dab11ebaabd0cc47ab5f122/?media_external=1"
-					/>
-				</div>
-			</div>
-			<div className="bg-black u-full-width">
-				<div className="container">
-					<Iframe
 						title="Jak šel čas s koronavirem - Milion chvilek"
 						src="https://www.youtube.com/embed/B2a2m3CsiR0"
 					/>
@@ -93,27 +89,35 @@ const Index = ({ data }) => {
 				<Graph />
 				<TextBox title="Drsné finále" icon="?!">
 					<p>
-						{"Ohlédnutí za výsledkem řízení v době pandemie dal dohromady web "}
+						{"Za výsledkem řízení v době pandemie se ohlíží "}
 						<a
 							href="https://neschopnostzabiji.cz/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							https://neschopnostzabiji.cz/
+							zde
 						</a>
-						.
+						. A to jsme navíc měli i obří polní nemocnici.
 					</p>
 				</TextBox>
 			</div>
+			<div className="bg-black u-full-width">
+				<div className="container">
+					<Iframe
+						title="Jak šel čas s koronavirem - Milion chvilek"
+						src="https://www.youtube.com/embed/riIxagmRk7M"
+					/>
+				</div>
+			</div>
 			<div className="container">
-				<h2>Že si za to lidé mohou sami? Možná na tom kapka pravdy bude.</h2>
+				<h2>A co lidi zajímalo nejvíc?</h2>
 				<p>
 					{"Následující post od "}
 					<a
 						title="Josef Šlerka - profil"
 						target="_blank"
 						rel="noreferrer"
-						href="https://www.facebook.com/josef.slerka?fref=nf"
+						href="https://www.facebook.com/josef.slerka"
 					>
 						Josef Šlerka
 					</a>

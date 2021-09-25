@@ -23,22 +23,26 @@ const Upominka = ({ data }) => {
 					</p>
 				</div>
 			</div>
-			<div className="container">
-				<div className="row" style={{ backgroundColor: "black" }}>
-					<div className="columns three">&nbsp;</div>
-					<div className="columns six">
-						<GatsbyImg fluid={data.best_in_covid_all.childImageSharp.fluid} />
+			<div className="bg-black u-full-width">
+				<div className="container">
+					<div className="row" style={{ backgroundColor: "black" }}>
+						<div className="columns three">&nbsp;</div>
+						<div className="columns six">
+							<GatsbyImg fluid={data.best_in_covid_all.childImageSharp.fluid} />
+						</div>
+						<div className="columns three">&nbsp;</div>
 					</div>
-					<div className="columns three">&nbsp;</div>
-				</div>
-			</div>
-			<div className="container">
-				<div className="row">
-					<div className="columns six">
-						<GatsbyImg fluid={data.best_in_covid_black.childImageSharp.fluid} />
-					</div>
-					<div className="columns six">
-						<GatsbyImg fluid={data.best_in_covid_white.childImageSharp.fluid} />
+					<div className="row">
+						<div className="columns six">
+							<GatsbyImg
+								fluid={data.best_in_covid_black.childImageSharp.fluid}
+							/>
+						</div>
+						<div className="columns six">
+							<GatsbyImg
+								fluid={data.best_in_covid_white.childImageSharp.fluid}
+							/>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -4,6 +4,7 @@ import GatsbyImg from "gatsby-image/withIEPolyfill";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Iframe from "../components/Iframe";
+import TextBox from "../components/TextBox";
 
 const Index = ({ data }) => {
 	return (
@@ -19,6 +20,21 @@ const Index = ({ data }) => {
 					title="Best in Covid - Andrej Babiš"
 					src="https://www.youtube.com/embed/HSH2dGRc_LE"
 				/>
+			</div>
+			<div className="container">
+				<TextBox title="Bled Strategic Forum" icon="?">
+					<p>
+						{"Výrok zazněl na "}
+						<a
+							href="https://2020.bledstrategicforum.org/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Bled Strategic Forum 2020
+						</a>
+						.
+					</p>
+				</TextBox>
 			</div>
 			<div className="container">
 				<h2>Jak šel čas</h2>

@@ -5,6 +5,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Iframe from "../components/Iframe";
 import TextBox from "../components/TextBox";
+import Graph from "../components/Graph";
 
 const Index = ({ data }) => {
 	return (
@@ -37,10 +38,39 @@ const Index = ({ data }) => {
 					</p>
 				</TextBox>
 			</div>
-			<div>
-				<div className="container">
-					<h2>Jak šel čas</h2>
-				</div>
+			<div className="container">
+				<h2>Jak šel čas</h2>
+				<TextBox title="28.1.2020 - Otázky bez odpovědí" icon="!">
+					<p>
+						<a
+							href="https://www.psp.cz/sqw/detail.sqw?id=6007"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Bohuslav Svoboda
+						</a>
+						{" chce zařadit na pořad jednání PSP "}
+						<a
+							href="https://www.psp.cz/eknih/2017ps/stenprot/040schuz/s040160.htm#r10"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							informace vlády ČR k opatřením souvisejícím se šířením koronaviru
+						</a>
+						.
+					</p>
+					<p>
+						{"Bohužel "}
+						<a
+							href="https://www.psp.cz/sqw/hlasy.sqw?G=72072"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							marně
+						</a>
+						.
+					</p>
+				</TextBox>
 			</div>
 			<div className="bg-black u-full-width">
 				<div className="container">
@@ -59,10 +89,24 @@ const Index = ({ data }) => {
 				</div>
 			</div>
 			<div className="container">
-				<h2>
-					Že si za současný stav mohou lidé sami? Možná na tom kapka pravdy
-					bude.
-				</h2>
+				<h2>Jak to dopadlo</h2>
+				<Graph />
+				<TextBox title="Drsné finále" icon="?!">
+					<p>
+						{"Ohlédnutí za výsledkem řízení v době pandemie dal dohromady web "}
+						<a
+							href="https://neschopnostzabiji.cz/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							https://neschopnostzabiji.cz/
+						</a>
+						.
+					</p>
+				</TextBox>
+			</div>
+			<div className="container">
+				<h2>Že si za to lidé mohou sami? Možná na tom kapka pravdy bude.</h2>
 				<p>
 					{"Následující post od "}
 					<a

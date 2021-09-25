@@ -6,6 +6,7 @@ const styledTextBox = css`
 	display: flex;
 	padding: 3rem;
 	.icon {
+		flex-shrink: 0;
 		height: 8rem;
 		line-height: 8rem;
 		width: 8rem;

@@ -7,28 +7,24 @@ const styledLayout = css`
 	min-width: 280px;
 	margin: auto;
 	.container {
-		padding-bottom: 2rem;
+		padding-top: 6rem;
+		padding-bottom: 4rem;
 	}
-	.container--wrapper {
-		background-color: #24292e;
-		color: #f8f9fa;
-		margin-bottom: 2rem;
-		&.footer {
-			padding-top: 2rem;
-			margin-bottom: 0;
-		}
+	.footer {
+		padding-top: 4rem;
+		margin-bottom: 0;
 	}
 	.flex-line {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
-	.headline {
-		margin: 0;
-	}
 	.headline__link {
 		text-decoration: none;
 		color: #f8f9fa;
+	}
+	.header {
+		padding-bottom: 2rem;
 	}
 `;
 

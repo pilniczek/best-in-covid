@@ -14,17 +14,18 @@ const Index = ({ data }) => {
 			metaDescription="Češi musí být vždy ve všem nejlepší! A patřičně se pochlubit."
 			metaImage={data.meta_image.childImageSharp.fixed.src}
 		>
-			<div className="container">
-				<h2>Hvězdný výrok, který zraje</h2>
-				<Iframe
-					title="Best in Covid - Andrej Babiš"
-					src="https://www.youtube.com/embed/HSH2dGRc_LE"
-				/>
+			<div className="bg-black u-full-width">
+				<div className="container">
+					<Iframe
+						title="Best in Covid - Andrej Babiš"
+						src="https://www.youtube.com/embed/HSH2dGRc_LE"
+					/>
+				</div>
 			</div>
 			<div className="container">
-				<TextBox title="Bled Strategic Forum" icon="?">
+				<TextBox title="Hvězdný výrok, který zraje" icon="?">
 					<p>
-						{"Výrok zazněl na "}
+						{"Zazněl na "}
 						<a
 							href="https://2020.bledstrategicforum.org/"
 							target="_blank"
@@ -36,18 +37,26 @@ const Index = ({ data }) => {
 					</p>
 				</TextBox>
 			</div>
-			<div className="container">
-				<h2>Jak šel čas</h2>
-				<Iframe
-					title="Koronavirová horská dráha Andreje Babiše! Změnu názorů premiéra shrnuje Veselovský"
-					src="https://video.aktualne.cz/embed_iframe/dvtv/best-in-covid-nebo-taky-ne-nazorovou-houpacku-premiera-babis/r~30f6c2ac0dab11ebaabd0cc47ab5f122/?media_external=1"
-				/>
+			<div>
+				<div className="container">
+					<h2>Jak šel čas</h2>
+				</div>
 			</div>
-			<div className="container">
-				<Iframe
-					title="Jak šel čas s koronavirem - Milion chvilek"
-					src="https://www.youtube.com/embed/B2a2m3CsiR0"
-				/>
+			<div className="bg-black u-full-width">
+				<div className="container">
+					<Iframe
+						title="Koronavirová horská dráha Andreje Babiše! Změnu názorů premiéra shrnuje Veselovský"
+						src="https://video.aktualne.cz/embed_iframe/dvtv/best-in-covid-nebo-taky-ne-nazorovou-houpacku-premiera-babis/r~30f6c2ac0dab11ebaabd0cc47ab5f122/?media_external=1"
+					/>
+				</div>
+			</div>
+			<div className="bg-black u-full-width">
+				<div className="container">
+					<Iframe
+						title="Jak šel čas s koronavirem - Milion chvilek"
+						src="https://www.youtube.com/embed/B2a2m3CsiR0"
+					/>
+				</div>
 			</div>
 			<div className="container">
 				<h2>

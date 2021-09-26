@@ -16,6 +16,8 @@ const styledNav = css`
 		flex-direction: column;
 		padding: 10px 0;
 		text-transform: uppercase;
+		margin-right: -2rem;
+		padding-right: 2rem;
 		&.open {
 			display: flex;
 		}

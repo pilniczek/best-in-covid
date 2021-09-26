@@ -28,7 +28,8 @@ const styledLayout = css`
 		margin: 0 -20px;
 	}
 	.header {
-		padding-top: 2rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
 	}
 `;
 

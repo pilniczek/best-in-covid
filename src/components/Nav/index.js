@@ -14,6 +14,9 @@ const Nav = () => {
 				<span className="menu-label">menu</span>
 			</button>
 			<div className={`nav__inner bg-black ${isOpen ? "open" : ""}`}>
+				<Link className="nav-link" to="/">
+					Domů
+				</Link>
 				<a
 					className="nav-link"
 					href="https://onemocneni-aktualne.mzcr.cz/covid-19"

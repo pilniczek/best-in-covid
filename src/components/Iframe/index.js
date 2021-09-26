@@ -19,9 +19,11 @@ const Iframe = ({ src, title }) => {
 
 export const YT = ({ videoid, playlabel }) => {
 	return (
-		<div className={iframeWrapper}>
-			<lite-youtube videoid={videoid} playlabel={playlabel} />
-		</div>
+		<lite-youtube videoid={videoid} playlabel={playlabel}>
+			<button type="button" className="lty-playbtn">
+				<span className="lyt-visually-hidden">{playlabel}</span>
+			</button>
+		</lite-youtube>
 	);
 };
 

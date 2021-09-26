@@ -50,8 +50,7 @@ export const iframeWrapper = css`
 		font-size: 3rem;
 	}
 
-	iframe,
-	lite-youtube {
+	iframe {
 		border: 0px none;
 		height: 100%;
 		left: 0px;
@@ -60,6 +59,10 @@ export const iframeWrapper = css`
 		padding: 0px;
 		position: absolute;
 		top: 0px;
+		width: 100%;
+		max-width: none;
+	}
+	lite-youtube {
 		width: 100%;
 		max-width: none;
 	}

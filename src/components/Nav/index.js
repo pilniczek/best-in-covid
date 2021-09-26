@@ -9,7 +9,11 @@ const Nav = () => {
 
 	return (
 		<nav className={`${styledNav}`}>
-			<button type="button" className="menu-button" onClick={toggleSetIsOpen}>
+			<button
+				type="button"
+				className="menu-button button"
+				onClick={toggleSetIsOpen}
+			>
 				<span className="menu-icon">☰</span>
 				<span className="menu-label">menu</span>
 			</button>

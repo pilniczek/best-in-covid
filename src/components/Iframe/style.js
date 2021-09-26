@@ -62,10 +62,6 @@ export const iframeWrapper = css`
 		width: 100%;
 		max-width: none;
 	}
-	lite-youtube {
-		width: 100%;
-		max-width: none;
-	}
 `;
 
 export default iframeWrapper;

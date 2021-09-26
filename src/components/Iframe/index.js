@@ -19,7 +19,14 @@ const Iframe = ({ src, title }) => {
 
 export const YT = ({ videoid, playlabel }) => {
 	return (
-		<lite-youtube videoid={videoid} playlabel={playlabel}>
+		<lite-youtube
+			videoid={videoid}
+			playlabel={playlabel}
+			style={{
+				width: "100%",
+				maxWidth: "none",
+			}}
+		>
 			<button type="button" className="lty-playbtn">
 				<span className="lyt-visually-hidden">{playlabel}</span>
 			</button>

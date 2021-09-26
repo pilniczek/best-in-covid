@@ -23,15 +23,16 @@ const Index = ({ data }) => {
 			<div className="container">
 				<TextBox title="Hvězdný výrok, který zraje" icon="?">
 					<p>
-						{"Zazněl na "}
+						{"Zazněl 31. srpna 2020 na "}
 						<a
 							href="https://2020.bledstrategicforum.org/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							Bled Strategic Forum 2020
+							Bled Strategic Forum
 						</a>
-						.
+						. Jakoli to tehdy bylo úctyhodné, časem se situace razantně měnila a
+						s ní i význam tohoto prohlášení.
 					</p>
 				</TextBox>
 			</div>

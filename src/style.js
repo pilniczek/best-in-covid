@@ -10,15 +10,13 @@ const defaultStyles = css`
 			border-bottom: 1rem solid #f24d12;
 			width: 10rem;
 		}
-		.button,
-		button {
+		.button {
 			background-color: #f8f9fa;
 		}
 		.bg-black {
 			background-color: #000000;
 			color: #f8f9fa;
-			.button,
-			button {
+			.button {
 				background-color: #000000;
 				color: #f8f9fa;
 			}

@@ -3,7 +3,7 @@ import { object } from "prop-types";
 import GatsbyImg from "gatsby-image/withIEPolyfill";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
-import Iframe from "../components/Iframe";
+import Iframe, { YT } from "../components/Iframe";
 import TextBox from "../components/TextBox";
 import Graph from "../components/Graph";
 
@@ -17,10 +17,7 @@ const Index = ({ data }) => {
 		>
 			<div className="bg-black u-full-width">
 				<div className="container">
-					<Iframe
-						title="Best in Covid - Andrej Babiš"
-						src="https://www.youtube.com/embed/HSH2dGRc_LE"
-					/>
+					<YT playlabel="Best in Covid - Andrej Babiš" videoid="HSH2dGRc_LE" />
 				</div>
 			</div>
 			<div className="container">
@@ -78,9 +75,9 @@ const Index = ({ data }) => {
 			</div>
 			<div className="bg-black u-full-width">
 				<div className="container">
-					<Iframe
-						title="Jak šel čas s koronavirem - Milion chvilek"
-						src="https://www.youtube.com/embed/B2a2m3CsiR0"
+					<YT
+						playlabel="Jak šel čas s koronavirem - Milion chvilek"
+						videoid="B2a2m3CsiR0"
 					/>
 				</div>
 			</div>
@@ -103,9 +100,9 @@ const Index = ({ data }) => {
 			</div>
 			<div className="bg-black u-full-width">
 				<div className="container">
-					<Iframe
-						title="Jak šel čas s koronavirem - Milion chvilek"
-						src="https://www.youtube.com/embed/riIxagmRk7M"
+					<YT
+						playlabel="Jak šel čas s koronavirem - Milion chvilek"
+						videoid="riIxagmRk7M"
 					/>
 				</div>
 			</div>

@@ -2,6 +2,7 @@ import React from "react";
 import { node, object, string } from "prop-types";
 import GatsbyImg from "gatsby-image/withIEPolyfill";
 import { Link } from "gatsby";
+import Helmet from "react-helmet";
 import styledLayout from "./style";
 import Nav from "../Nav";
 import Seo from "../SEO";
@@ -10,6 +11,9 @@ import "../../style";
 const Layout = ({ children, data, metaTitle, metaDescription, metaImage }) => {
 	return (
 		<>
+			<Helmet>
+				<script src="/lite-yt-embed.js" async />
+			</Helmet>
 			<Seo
 				metaTitle={metaTitle}
 				metaDescription={metaDescription}

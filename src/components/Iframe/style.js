@@ -1,3 +1,4 @@
+import "lite-youtube-embed/src/lite-yt-embed.css";
 import { css } from "linaria";
 
 export const iframeWrapper = css`
@@ -48,16 +49,20 @@ export const iframeWrapper = css`
 		animation: loading 0.75s infinite;
 		font-size: 3rem;
 	}
+
+	iframe,
+	lite-youtube {
+		border: 0px none;
+		height: 100%;
+		left: 0px;
+		margin: 0px;
+		overflow: hidden;
+		padding: 0px;
+		position: absolute;
+		top: 0px;
+		width: 100%;
+		max-width: none;
+	}
 `;
 
-export const styledIframe = css`
-	border: 0px none;
-	height: 100%;
-	left: 0px;
-	margin: 0px;
-	overflow: hidden;
-	padding: 0px;
-	position: absolute;
-	top: 0px;
-	width: 100%;
-`;
+export default iframeWrapper;

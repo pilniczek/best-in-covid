@@ -1,6 +1,6 @@
 import React from "react";
 import { string } from "prop-types";
-import { iframeWrapper, styledIframe } from "./style";
+import { iframeWrapper } from "./style";
 
 const Iframe = ({ src, title }) => {
 	return (
@@ -9,13 +9,25 @@ const Iframe = ({ src, title }) => {
 				title={title}
 				src={src}
 				allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				className={styledIframe}
 				allowFullScreen
 				msallowfullscreen="true"
 				frameBorder="0"
 			/>
 		</div>
 	);
+};
+
+export const YT = ({ videoid, playlabel }) => {
+	return (
+		<div className={iframeWrapper}>
+			<lite-youtube videoid={videoid} playlabel={playlabel} />
+		</div>
+	);
+};
+
+YT.propTypes = {
+	videoid: string.isRequired,
+	playlabel: string.isRequired,
 };
 
 Iframe.propTypes = {
